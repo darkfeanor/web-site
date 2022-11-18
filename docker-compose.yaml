@@ -1,17 +1,18 @@
 version: '3'
 services:
-  web:
+  nginx:
     build: .
     container_name: "website"
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
+      - /home/denis/volumes/website/data/certbot/conf:/etc/letsencrypt
+      - /home/denis/volumes/website/data/certbot/www:/var/www/certbot
   certbot:
     image: certbot/certbot
+    container_name: "certbot"
     volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'
+      - /home/denis/volumes/website/data/certbot/conf:/etc/letsencrypt
+      - /home/denis/volumes/website/data/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
