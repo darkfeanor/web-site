@@ -19,6 +19,14 @@ export const HomeBody = styled.div`
   }
 `;
 
+export const LettersContainer = styled.div`
+  font-size: 30px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 20px;
+  }
+`;
+
 export const HomeContainer = styled.div`
   padding-bottom: 12em;
   display: flex;

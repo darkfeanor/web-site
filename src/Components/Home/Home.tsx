@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { Colors } from "../../Styles/colors";
 import { Link } from "../Contact/ContactElements";
 import CustomLetter from "../Letter/Letter";
-import { HomeBody, HomeContainer, TypeWriter } from "./HomeElements";
+import { HomeBody, HomeContainer, TypeWriter,LettersContainer } from "./HomeElements";
+import pdf from "./../../Assets/Lebenslauf.pdf";
 
 const typewriterStrings: string[] = [
   "I'm a Software Developer",
@@ -84,7 +85,7 @@ const Home = () => {
           >
             Hi there, my name is
           </span>
-          <div style={{ fontSize: 30 }}>{letters}</div>
+          <LettersContainer>{letters}</LettersContainer>
 
           <TypeWriter
             key={Math.random().toString()}
@@ -100,7 +101,7 @@ const Home = () => {
               textAlign: "center"
             }}
           >
-            <Link href="mailto:darkfeanor91@gmail.com" style={{ margin: 0}}>Contact Me</Link>
+            <Link href={pdf} download="Lebenslauf.pdf" style={{ margin: 0}}>Download my CV</Link>
           </div>
         </HomeContainer>
       </HomeBody>
