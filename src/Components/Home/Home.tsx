@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { Colors } from "../../Styles/colors";
 import { Link } from "../Contact/ContactElements";
 import CustomLetter from "../Letter/Letter";
-import { HomeBody, HomeContainer, TypeWriter,LettersContainer } from "./HomeElements";
-import pdf from "./../../Assets/Lebenslauf.pdf";
+import { HomeBody, HomeContainer, TypeWriter, LettersContainer } from "./HomeElements";
+import { Modal, useModal } from "../HomeModal/HomeModal";
 
 const typewriterStrings: string[] = [
   "I'm a Software Developer",
@@ -71,9 +71,11 @@ const Home = () => {
     };
   }, [direction]);
 
+  const { isOpen, toggle } = useModal();
+
   return (
     <>
-      <HomeBody id="home" style= {{ alignItems: "center"}}>
+      <HomeBody id="home" style={{ alignItems: "center" }}>
         <HomeContainer style={{ alignItems: "center" }}>
           <span
             style={{
@@ -101,7 +103,8 @@ const Home = () => {
               textAlign: "center"
             }}
           >
-            <Link href={pdf} download="Lebenslauf.pdf" style={{ margin: 0}}>Download my CV</Link>
+            <Link onClick={toggle} style={{ margin: 0 }}>Download my CV</Link>
+            <Modal isOpen={isOpen} toggle={toggle}></Modal>
           </div>
         </HomeContainer>
       </HomeBody>

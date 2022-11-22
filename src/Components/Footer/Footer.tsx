@@ -3,7 +3,7 @@ import { FaLinkedin, FaXingSquare, FaFileDownload } from "react-icons/fa";
 import { SocialIcon } from "../Sidebar/SidebarElements";
 import { FooterBody, FooterText, LinkContainer } from "./FooterElements";
 
-import pdf from "./../../Assets/Lebenslauf.pdf";
+import pdf from "./../../Assets/Lebenslauf_de.pdf";
 
 const Footer = () => {
   return (

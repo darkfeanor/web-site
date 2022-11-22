@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../../Styles/colors";
 
+
 export const HomeBody = styled.div`
   margin: 0px auto;
   max-width: 1000px;

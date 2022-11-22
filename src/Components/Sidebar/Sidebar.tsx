@@ -1,7 +1,7 @@
 import { Line, SidebarBody, SocialIcon } from "./SidebarElements";
 import { FiMail } from "react-icons/fi";
 import { FaLinkedin, FaXingSquare, FaFileDownload } from "react-icons/fa";
-import pdf from "./../../Assets/Lebenslauf.pdf";
+import pdf from "./../../Assets/Lebenslauf_de.pdf";
 
 const iconSize = 30;
 const Sidebar = () => {
