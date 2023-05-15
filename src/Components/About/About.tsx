@@ -36,7 +36,7 @@ const About = () => {
         <AboutContainer>
           <TextSection>
 
-            I have more than 7 years of experience working as a Software Engineer. 
+            I have more than 9 years of experience working as a Software Engineer. 
             Working for small startups and large international organizations helped 
             me become a proficient full-stack developer. My experiences focused on 
             building scalable web and cross-platform applications using modern web technologies.
