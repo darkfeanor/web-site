@@ -25,7 +25,7 @@ const Footer = () => {
 
 
         </LinkContainer>
-        <FooterText>© Copyright 2023. All rights reserved. Privet Kostja!</FooterText>
+        <FooterText>© Copyright 2023. All rights reserved.</FooterText>
       </FooterBody>
     </>
   );
