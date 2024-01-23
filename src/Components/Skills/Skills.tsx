@@ -54,7 +54,7 @@ const content: { [key: string]: any } = {
     position: "Software Developer",
     duration: "2015 - 2019",
     description:
-      "As a Backend Developer, I created a big variaty of REST APIs with .NET Core and Java Spring Boot. Being proficient in AWS and Azure, among other things, I was tasked with developing serverless and cloud applications. I also created microservices, worked with Big Data, and developed backend and frontend using .NET/Java and Angular, respectively, as well as native applications using Go Lang.",
+      "As a Backend Developer, I created a big variety of REST APIs with .NET Core and Java Spring Boot. Being proficient in AWS and Azure, among other things, I was tasked with developing serverless and cloud applications. I also created microservices, worked with Big Data, and developed backend and frontend using .NET/Java and Angular, respectively, as well as native applications using Go Lang.",
       topSkills: [".NET Core", "Angular", "GO Lang"]
     },
   [Companies.SARACUS_CONSALTING]: {
