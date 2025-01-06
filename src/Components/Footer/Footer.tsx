@@ -25,7 +25,7 @@ const Footer = () => {
 
 
         </LinkContainer>
-        <FooterText>© Copyright 2024. All rights reserved.</FooterText>
+        <FooterText>© Copyright 2025. All rights reserved.</FooterText>
       </FooterBody>
     </>
   );
