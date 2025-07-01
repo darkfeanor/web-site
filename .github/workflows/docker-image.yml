@@ -20,5 +20,3 @@ jobs:
       run: docker-compose down
     - name: Run the  the Docker image
       run: docker-compose up -d
-    - name: Cleanup
-      run: docker system prune -f
