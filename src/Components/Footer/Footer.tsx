@@ -13,10 +13,10 @@ const Footer = () => {
         <SocialIcon href="mailto:darkfeanor91@gmail.com" style={{marginLeft:"30px", marginRight:"30px"}}>
           <FiMail size={20} style={{ cursor: "pointer", pointerEvents: "none"}}/>
         </SocialIcon>
-        <SocialIcon href="https://www.linkedin.com/in/denis-filimonov-51bb71176/" style={{marginLeft:"30px", marginRight:"30px"}}>
+        <SocialIcon href="https://www.linkedin.com/in/Dennis-Filbert-51bb71176/" style={{marginLeft:"30px", marginRight:"30px"}}>
           <FaLinkedin size={20} style={{ cursor: "pointer", pointerEvents: "none" }} />
         </SocialIcon>
-        <SocialIcon href="https://www.xing.com/profile/Denis_Filimonov/cv" style={{marginLeft:"30px", marginRight:"30px"}}>
+        <SocialIcon href="https://www.xing.com/profile/Dennis_Filbert/cv" style={{marginLeft:"30px", marginRight:"30px"}}>
           <FaXingSquare size={20} style={{ cursor: "pointer", pointerEvents: "none" }}/>
         </SocialIcon>
         <SocialIcon href={pdf} download="Lebenslauf.pdf" style={{marginLeft:"30px", marginRight:"30px"}}>

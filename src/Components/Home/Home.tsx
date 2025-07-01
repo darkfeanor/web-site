@@ -16,7 +16,7 @@ const typewriterStrings: string[] = [
 const Home = () => {
   const letters: JSX.Element[] = [];
 
-  const name: string = "Denis Filimonov \n";
+  const name: string = "Dennis Filbert \n";
   for (let i = 0; i < name.length; i += 1) {
     if (name[i] === "\n") {
       letters.push(
